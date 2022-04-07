@@ -1,0 +1,2 @@
+ Non désolé le code n'est pas open source mais c'est assez simple. Les nombres sont récupérés dans une liste simplement chaînée et l'algorithme consiste à: parcourir la liste, push sur la deuxième liste les valeurs inférieures à un certain point de pivot puis recommencer avec un nouveau de point de pivot jusqu'à ce que la première liste soit vide (ou presque). A ce moment, la deuxième liste est déjà un peu triée et il ne reste plus qu'à sélectionner les valeurs les plus grandes pour les push sur la première liste. 
+ 
