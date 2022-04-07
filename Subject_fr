@@ -1,0 +1,75 @@
+Chapitre III
+Objectifs
+L'écriture d'un algorithme de tri est toujours une étape très importante dans le parcours d'un développeur. Ce
+est souvent la première rencontre avec le concept de complexité.
+Les algorithmes de tri et leur complexité font partie des questions classiques abordées
+lors des entretiens d'embauche. C'est probablement le bon moment pour examiner ces concepts puisque vous
+devoir les affronter à un moment donné.
+Les objectifs d'apprentissage de ce projet sont la rigueur, l'utilisation du C et l'utilisation d'algorithmes de base.
+Surtout en se concentrant sur leur complexité.
+Le tri des valeurs est simple. Les trier le plus rapidement possible est moins simple. Surtout
+car d'une configuration d'entiers à une autre, la solution de tri la plus efficace peut
+différer
+
+Chapitre IV
+Consignes communes
+• Votre projet doit être écrit en C.
+• Votre projet doit être rédigé conformément à la Norme. Si vous avez des bonus
+fichiers/fonctions, ils sont inclus dans la vérification de la norme et vous recevrez un 0 s'il y en a
+est une erreur de norme à l'intérieur.
+• Vos fonctions ne doivent pas se fermer inopinément (défaut de segmentation, erreur de bus, double
+gratuit, etc.) en dehors des comportements indéfinis. Si cela se produit, votre projet sera
+considéré comme non fonctionnel et recevra un 0 lors de l'évaluation.
+• Tout l'espace mémoire alloué au tas doit être correctement libéré si nécessaire. Pas de fuites
+sera toléré.
+• Si le sujet l'exige, vous devez soumettre un Makefile qui compilera votre
+fichiers source à la sortie requise avec les drapeaux -Wall, -Wextra et -Werror, utilisez
+cc, et votre Makefile ne doit pas être réassocié.
+• Votre Makefile doit au moins contenir les règles $(NAME), all, clean, fclean et
+ré.
+• Pour rendre des bonus à votre projet, vous devez inclure un bonus de règle dans votre Makefile,
+qui rajoutera tous les divers en-têtes, librairies ou fonctions interdites sur
+l'essentiel du projet. Les bonus doivent être dans un fichier différent _bonus.{c/h} si
+le sujet ne précise rien d'autre. Évaluation des pièces obligatoires et bonus
+se fait séparément.
+• Si votre projet vous permet d'utiliser votre libft, vous devez copier ses sources et ses
+Makefile associé dans un dossier libft avec son Makefile associé. Tes projets
+Makefile doit compiler la bibliothèque en utilisant son Makefile, puis compiler le projet.
+• Nous vous encourageons à créer des programmes de test pour votre projet même si ce travail
+n'aura pas à être soumis et ne sera pas noté. Cela vous donnera une chance
+pour tester facilement votre travail et celui de vos pairs. Vous trouverez ces tests en particulier
+utile lors de votre soutenance. En effet, pendant la soutenance, vous êtes libre d'utiliser vos tests
+et/ou les tests du pair que vous évaluez.
+• Soumettez votre travail à votre dépôt git assigné. Seul le travail dans le dépôt git-
+tory sera noté. Si Deep Thought est chargé de noter votre travail, cela sera fait après vos évaluations par les pairs. Si une erreur se produit dans une section de votre travail pendant
+Le classement de la pensée profonde, l'évaluation s'arrêtera
+Chapitre V
+Partie obligatoire
+V.1 Les règles
+• Vous avez 2 piles nommées a et b.
+• Au début:
+◦ La pile a contient une quantité aléatoire de nombres négatifs et/ou positifs
+qui ne peut pas être dupliqué.
+◦ La pile b est vide.
+• Le but est de trier par ordre croissant les nombres dans la pile a. Pour ce faire, vous avez le
+opérations suivantes à votre disposition :
+sa (swap a) : échange les 2 premiers éléments en haut de la pile a.
+Ne rien faire s'il n'y a qu'un ou aucun élément.
+sb (swap b) : échange les 2 premiers éléments en haut de la pile b.
+Ne rien faire s'il n'y a qu'un ou aucun élément.
+ss : sa et sb en même temps.
+pa (appuyez sur a) : prenez le premier élément en haut de b et placez-le en haut de a.
+Ne rien faire si b est vide.
+pb (appuyez sur b) : Prenez le premier élément en haut de a et placez-le en haut de b.
+Ne rien faire si a est vide.
+ra (faire pivoter a) : décaler vers le haut tous les éléments de la pile a de 1.
+Le premier élément devient le dernier.
+rb (rotation b) : décale vers le haut tous les éléments de la pile b de 1.
+Le premier élément devient le dernier.
+rr : ra et rb en même temps.
+rra (rotation inverse a) : Décaler tous les éléments de la pile a de 1 vers le bas.
+Le dernier élément devient le premier.
+rrb (rotation inverse b) : décale tous les éléments de la pile b de 1.
+Le dernier élément devient le premier.
+rrr : rra et rrb en même temps.
+
