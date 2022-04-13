@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 08:16:52 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/12 09:30:09 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/13 10:06:06 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /* Création de liste avec sa structure, avec attribution de mémoire */
 
-t_list	*ft_lstnew(int content)
+t_list	*ft_lstnewbis(int content)
 {
 	t_list	*new;
 
@@ -22,7 +22,7 @@ t_list	*ft_lstnew(int content)
 	if (!new)
 		return (NULL);
 	new->next = NULL;
-	new->content = content;
+	new->i = content;
 	return (new);
 }
 
@@ -31,10 +31,10 @@ t_list	*ft_lstnew(int content)
 void	ft_lstadd(t_list **lst, t_list *new)
 {
 	if (lst && new)
-	(
+	{
 		new->next = *lst;
 		*lst = new;
-	)
+	}
 }
 
 /* Permet d'ajouter un nouvel élément à la fin de la liste "new" */
@@ -58,7 +58,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 /* Renvoie le dernier élément de la liste */
 
-t_list	*ft_lstlast(t_list **lst)
+t_list	*ft_lstlastbis(t_list **lst)
 {
 	while ((*lst)->next)
 		*lst = (*lst)->next;
@@ -77,10 +77,10 @@ t_list	*ft_read_lst(int *tab, int len)
 	lst = NULL;
 	if (len > 0)
 	{
-		list = ft_lstnew(tab[0]);
+		lst = ft_lstnewbis(tab[0]);
 		while (i < len)
 		{
-			next = ft_lstnew(tab[i]);
+			next = ft_lstnewbis(tab[i]);
 			ft_lstadd_back(&lst, next);
 			i++;
 		}
