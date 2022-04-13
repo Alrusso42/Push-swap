@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:11:13 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/13 10:21:51 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/13 10:30:35 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_sa(t_list **list)
 	tmp->next = *list;
 	ft_lstadd(&*list, tmp);
 	ft_lstadd(&*list, tmp2);
-	write(1, "sa\n", 3); /* Remplacer write par ft_printf */
+	write(1, "sa\n", 3); /* Remplacer write par ft_printf */	
+}
 
 /* Monte de un cran tous les éléments de la liste */
 /* Le premier élément devient le dernier */
