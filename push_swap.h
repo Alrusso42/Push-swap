@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:41:49 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/13 10:32:15 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/18 10:06:13 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int		ft_check_num(char *str);
 int		*ft_check(int len, char **str);
 int		*ft_check2(int len, char **str);
 
-///// MAIN /////
-int		ft_tablen(char **tab);
+/* Composition du main pour le programme */
+int		ft_lstlen(char **tab);
 int		*ft_read(int argc, char **argv, int *res);
 
 /* Structure liste chainée */
@@ -80,7 +80,7 @@ int		ft_get_bits(int num);
 void	sort_unite(t_list **list_a, t_list **list_b, int j, int len);
 void	ft_sortall(t_list **list_a, t_list **list_b, int len);
 
-/////  PUSH INDEX  /////
+/* Indexage */
 void	ft_index(t_list **list_a, int i, int index);
 void	indexlist(t_list **list_a);
 
