@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 08:16:52 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/13 10:06:06 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/18 08:49:57 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ t_list	*ft_lstlastbis(t_list **lst)
 	return (*lst);
 }
 
-/* Permet de lire sa liste */
+/* Permet de lire la liste */
 
 t_list	*ft_read_lst(int *tab, int len)
 {
