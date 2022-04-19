@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 08:55:37 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 09:45:04 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 09:47:38 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_list_min(t_list **lst)
 	return (res);
 }
 
-/* Vérifie si le trie est bien effectué */
+/* Vérifie si le tri est bien effectué */
 int	check_sort(t_list **lst)
 {
 	t_list	*tmp;
