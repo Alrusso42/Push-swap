@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:41:49 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 08:54:29 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 09:17:10 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,16 @@ int		*ft_read(int argc, char **argv, int *res);
 
 /* Structure liste chainée */
 t_list	*ft_lstnewbis(int content);
-void	ft_lstadd(t_list **list, t_list *new);
-void	ft_lstadd_back(t_list **list, t_list *new);
-t_list	*ft_lstlastbis(t_list **list);
+void	ft_lstadd(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+t_list	*ft_lstlastbis(t_list **lst);
 t_list	*ft_read_lst(int *tab, int len);
 
-/////  SORT  /////
-int		ft_list_min(t_list **list);
-int		check_sort(t_list **list);
-t_list	*ft_before_last_list(t_list **list);
-void	ft_read_sort(t_list **list_a, int len);
+/* Gestion du tri */
+int		ft_list_min(t_list **lst);
+int		check_sort(t_list **lst);
+t_list	*ft_before_last_list(t_list **lst);
+void	ft_read_sort(t_list **lst_a, int len);
 
 /////  SORT 3  /////
 void	ft_2(t_list **list_a, t_list **list_b);
@@ -81,14 +81,14 @@ void	sort_unite(t_list **list_a, t_list **list_b, int j, int len);
 void	ft_sortall(t_list **list_a, t_list **list_b, int len);
 
 /* Indexage */
-void	ft_index(t_list **list_a, int i, int index);
-void	indexlist(t_list **list_a);
+void	ft_index(t_list **lst_a, int i, int index);
+void	indexlist(t_list **lst_a);
 
 /* Instructions algorithme */
-void	ft_sa(t_list **list);
-void	ft_ra(t_list **list);
-void	ft_rra(t_list **list);
-void	ft_pb(t_list **list_a, t_list **list_b);
-void	ft_pa(t_list **list_a, t_list **list_b);
+void	ft_sa(t_list **lst);
+void	ft_ra(t_list **lst);
+void	ft_rra(t_list **lst);
+void	ft_pb(t_list **lst_a, t_list **lst_b);
+void	ft_pa(t_list **lst_a, t_list **lst_b);
 
 #endif
