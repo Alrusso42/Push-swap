@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:41:49 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/18 10:06:13 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 08:54:29 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ struct s_list
 	t_list	*next;
 };
 
-/////  CHECK INPUT  ////
+/* Checking d'erreurs */
 int		ft_check_tab_max(int a, char *str);
 int		ft_check_same(int len, int *tab);
 int		ft_check_num(char *str);
