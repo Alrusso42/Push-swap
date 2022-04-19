@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:41:49 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 09:37:11 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 09:57:57 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,35 +50,35 @@ int		check_sort(t_list **lst);
 t_list	*ft_before_last_lst(t_list **lst);
 void	ft_read_sort(t_list **lst_a, int len);
 
-/////  SORT 3  /////
-void	ft_2(t_list **list_a, t_list **list_b);
-void	ft_5(t_list **list_a);
-void	ft_len3(t_list **list_a, t_list **list_b);
+/* Tri de taille 3 */
+void	ft_2(t_list **lst_a, t_list **lst_b);
+void	ft_5(t_list **lst_a);
+void	ft_len3(t_list **lst_a, t_list **lst_b);
 
-/////  SORT 4  /////
-void	ft_4_1(t_list **list_a, t_list **list_b);
-void	ft_4_2(t_list **list_a, t_list **list_b);
-void	ft_4_3(t_list **list_a, t_list **list_b);
-void	ft_4_4(t_list **list_a, t_list **list_b);
-void	ft_len4(t_list **list_a, t_list **list_b);
+/* Tri de taille 4 */
+void	ft_4_1(t_list **lst_a, t_list **lst_b);
+void	ft_4_2(t_list **lst_a, t_list **lst_b);
+void	ft_4_3(t_list **lst_a, t_list **lst_b);
+void	ft_4_4(t_list **lst_a, t_list **lst_b);
+void	ft_len4(t_list **lst_a, t_list **lst_b);
 
-/////  SORT 5  /////
-void	ft_5_3(t_list **list_a, t_list **list_b);
-void	ft_5_4(t_list **list_a, t_list **list_b);
-void	ft_5_5(t_list **list_a, t_list **list_b);
-void	ft_len5(t_list **list_a, t_list **list_b);
+/* Tri de taille 5 */
+void	ft_5_3(t_list **lst_a, t_list **lst_b);
+void	ft_5_4(t_list **lst_a, t_list **lst_b);
+void	ft_5_5(t_list **lst_a, t_list **lst_b);
+void	ft_len5(t_list **lst_a, t_list **lst_b);
 
-/////  SORT 6  /////
-void	ft_6_3(t_list **list_a, t_list **list_b);
-void	ft_6_4(t_list **list_a, t_list **list_b);
-void	ft_6_5(t_list **list_a, t_list **list_b);
-void	ft_6_6(t_list **list_a, t_list **list_b);
-void	ft_len6(t_list **list_a, t_list **list_b);
+/* Tri de taille 6 */
+void	ft_6_3(t_list **lst_a, t_list **lst_b);
+void	ft_6_4(t_list **lst_a, t_list **lst_b);
+void	ft_6_5(t_list **lst_a, t_list **lst_b);
+void	ft_6_6(t_list **lst_a, t_list **lst_b);
+void	ft_len6(t_list **lst_a, t_list **lst_b);
 
-////  SORT ALL  ////
+/* Tri de taille supérieur à 6 */
 int		ft_get_bits(int num);
-void	sort_unite(t_list **list_a, t_list **list_b, int j, int len);
-void	ft_sortall(t_list **list_a, t_list **list_b, int len);
+void	sort_unite(t_list **lst_a, t_list **lst_b, int j, int len);
+void	ft_sortall(t_list **lst_a, t_list **lst_b, int len);
 
 /* Indexage */
 void	ft_index(t_list **lst_a, int i, int index);
