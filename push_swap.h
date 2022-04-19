@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:41:49 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 09:17:10 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 09:37:11 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ t_list	*ft_read_lst(int *tab, int len);
 /* Gestion du tri */
 int		ft_list_min(t_list **lst);
 int		check_sort(t_list **lst);
-t_list	*ft_before_last_list(t_list **lst);
+t_list	*ft_before_last_lst(t_list **lst);
 void	ft_read_sort(t_list **lst_a, int len);
 
 /////  SORT 3  /////
