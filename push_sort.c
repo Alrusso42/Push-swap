@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 08:55:37 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 09:47:38 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/19 09:50:26 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	check_sort(t_list **lst)
 	return (0);
 }
 
-/* Récupère l'avant dernier de la liste */
+/* Récupère l'avant dernier élément de la liste */
 t_list	*ft_before_last_lst(t_list **lst)
 {
 	while ((*lst)->next->next)
