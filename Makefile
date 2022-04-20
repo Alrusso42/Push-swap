@@ -1,29 +1,29 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/19 09:17:22 by alrusso           #+#    #+#              #
-#    Updated: 2022/04/19 09:22:11 by alrusso          ###   ########.fr        #
+#    Updated: 2022/04/20 09:39:53 by alrusso          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = 	push_swap
 
 all :	
-		make -C libft
+		make -C Libft
 		cc -Wall -Werror -Wextra -o $(NAME) Libft/libft.a push_swap.c \
 			push_check_input.c push_swap_struct.c push_sort.c push_swap_instruction.c \
-			sort3.c sort4.c sort5.c sort6.c sortall.c push_index.c
+			push_sort_3.c push_sort_4.c push_sort_5.c push_sort_6.c push_sort_all.c push_index.c
 
 clean :
-		make clean -C libft
+		make clean -C Libft
 		rm $(NAME)
 
 fclean :
-		make fclean -C libft
+		make fclean -C Libft
 		rm $(NAME)
 
 re : fclean all

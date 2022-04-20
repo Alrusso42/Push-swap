@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:11:13 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/19 09:15:08 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/20 09:39:56 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	ft_rra(t_list **lst)
 	t_list	*tmp2;
 
 	tmp = *lst;
-	tmp2 = ft_before_last_list(&*lst);
+	tmp2 = ft_before_last_lst(&*lst);
 	*lst = ft_lstlastbis(&*lst);
 	(*lst)->next = tmp;
 	tmp2->next = NULL;

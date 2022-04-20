@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alrusso <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 10:54:24 by alrusso           #+#    #+#             */
-/*   Updated: 2022/02/23 11:44:22 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/20 09:40:03 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	m2 = (unsigned char *)src;
     if (!dst && !src)
         return (NULL);
-	if (m1 > m2)
+	else if (m1 > m2)
 	{
 		while (i < len)
 		{
