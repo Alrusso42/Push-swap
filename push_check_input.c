@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_check_imput.c                                 :+:      :+:    :+:   */
+/*   push_check_input.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 10:11:59 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/18 10:26:45 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/25 08:56:50 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_check_tab_max(int a, char *str)
 	return (0);
 }
 
-/* Vérifie s'il n'y a pas de doublons en arguments */ 
+/* Vérifie s'il n'y a pas de doublons en arguments */
 int	ft_check_same(int len, int *tab)
 {
 	int	i;

@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 08:16:52 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/18 08:49:57 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/25 08:51:33 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,18 +42,18 @@ void	ft_lstadd(t_list **lst, t_list *new)
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*tmp;
-	
+
 	if (!lst)
 		return ;
 	if (*lst)
-		{
-			tmp = *lst;	
-			while (tmp->next)
-				tmp = tmp->next;
+	{
+		tmp = *lst;
+		while (tmp->next)
+			tmp = tmp->next;
 			tmp->next = new;
-		}
-		else
-			*lst = new;
+	}
+	else
+		*lst = new;
 }
 
 /* Renvoie le dernier élément de la liste */

@@ -6,7 +6,7 @@
 /*   By: alrusso <alrusso@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 09:11:13 by alrusso           #+#    #+#             */
-/*   Updated: 2022/04/20 09:39:56 by alrusso          ###   ########.fr       */
+/*   Updated: 2022/04/25 08:53:24 by alrusso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_sa(t_list **lst)
 	tmp->next = *lst;
 	ft_lstadd(&*lst, tmp);
 	ft_lstadd(&*lst, tmp2);
-	write(1, "sa\n", 3); /* Remplacer write par ft_printf */	
+	write(1, "sa\n", 3);
 }
 
 /* Monte de un cran tous les éléments de la liste */
@@ -42,7 +42,7 @@ void	ft_ra(t_list **lst)
 	*lst = (*lst)->next;
 	tmp->next = NULL;
 	ft_lstadd_back(&*lst, tmp);
-	write(1, "ra\n", 3); /* Remplacer write par ft_printf */
+	write(1, "ra\n", 3);
 }
 
 /* Descend de un cran tous les éléments de la liste */
@@ -58,7 +58,7 @@ void	ft_rra(t_list **lst)
 	*lst = ft_lstlastbis(&*lst);
 	(*lst)->next = tmp;
 	tmp2->next = NULL;
-	write(1, "rra\n", 4); /* Remplacer write par ft_printf */
+	write(1, "rra\n", 4);
 }
 
 /* Prend le premier élément tout en haut de A et le met de tout en haut de B */
@@ -72,7 +72,7 @@ void	ft_pb(t_list **lst_a, t_list **lst_b)
 	*lst_a = (*lst_a)->next;
 	tmp->next = *lst_b;
 	*lst_b = tmp;
-	write(1, "pb\n", 3); /* Remplacer write par ft_printf */
+	write(1, "pb\n", 3);
 }
 
 /* Prend le premier élément tout en haut de B et le met tout en haut de A */
@@ -86,5 +86,5 @@ void	ft_pa(t_list **lst_a, t_list **lst_b)
 	*lst_b = (*lst_b)->next;
 	tmp->next = *lst_a;
 	*lst_a = tmp;
-	write(1, "pa\n", 3); /* Remplacer write par ft_printf */
+	write(1, "pa\n", 3);
 }
